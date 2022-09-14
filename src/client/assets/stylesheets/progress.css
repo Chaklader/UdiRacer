@@ -2,36 +2,65 @@
 
 /* -------------------  MOBILE  --------------------- */
 header {
-  background-image: url('https://via.placeholder.com/1150');
+	/*background-image: url('https://via.placeholder.com/1150');*/
+	background-image: url("./images/forest.jpg");
 }
 
 main#two-columns {
-    margin: 50px 0;
-    display: flex;
+	/* margin: 50px 0; */
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-main#two-columns section {
-    max-width: 50vw;
+/* main#two-columns section {
+  max-width: 50vw;
+} */
+
+main#two-columns {
+	max-width: 80vw;
+}
+
+section#accelerate {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 section#accelerate button {
-    height: 300px;
-    width: 300px;
-    margin: 30px auto;
-    border-radius: 180%;
-    background-color: green;
-    border-color: rgb(14, 166, 6);
-    cursor: pointer;
+	height: 150px;
+	width: 150px;
+	margin: 30px auto;
+	border-radius: 180%;
+	background-color: #db3939;
+	border-color: #db3939;
+	cursor: pointer;
+	font-family: "Lato", sans-serif;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+section#accelerate button:active {
+	background-color: #2a8170;
+	border: 1px solid #2a8170;
 }
 
 #big-numbers {
-    font-weight: bolder;
-    font-size: 70px;
+	font-weight: bolder;
+	font-size: 70px;
+	color: #908a8a;
+}
+
+section#leaderBoard {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section#leaderBoard > * {
+	flex: 1 100%;
 }
 
 /* -------------------  TABLET  --------------------- */
 @media (min-width: 768px) {
-
 }
 
 /* -------------------  DESKTOP  -------------------- */

@@ -1,50 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Start Your Pod Racer Simulation</title>
-    <link rel="stylesheet" href="assets/stylesheets/reset.css">
-    <link rel="stylesheet" href="assets/stylesheets/index.css">
-    <link rel="stylesheet" href="assets/stylesheets/form.css">
-    <link rel="stylesheet" href="assets/stylesheets/create.css">
-    <link rel="stylesheet" href="assets/stylesheets/progress.css">
-    <link rel="stylesheet" href="assets/stylesheets/results.css">
+    <link rel="stylesheet" href="assets/stylesheets/reset.css" />
+    <link rel="stylesheet" href="assets/stylesheets/index.css" />
+    <link rel="stylesheet" href="assets/stylesheets/form.css" />
+    <link rel="stylesheet" href="assets/stylesheets/create.css" />
+    <link rel="stylesheet" href="assets/stylesheets/progress.css" />
+    <link rel="stylesheet" href="assets/stylesheets/results.css" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Jura:wght@400;700&family=Lato&family=Lobster&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap"
+            rel="stylesheet"
+    />
     <script src="/assets/javascript/index.js" charset="utf-8"></script>
 </head>
 
 <body id="race">
-    <header>
-        <h1>Start Your Pod Racer Sim</h1>
-    </header>
-    <main>
-        <section id="create-race">
-            <h2>Get Started</h2>
-            <h3>Create Your Race</h3>
-            <form id="create-race">
+<header>
+    <h1>Start Your Pod Racer Sim</h1>
+</header>
+<main>
+    <section id="create-race">
+        <h2>Get Started</h2>
+        <h3>Create Your Race</h3>
+        <form id="create-race">
+            <div class="wrap-card">
                 <h3>Choose your track</h3>
-                <ul class="cards-list" id="tracks">
-                    <!-- filled via js -->
-                </ul>
-                <label for="course" class="sr-only">Race Course:</label>
-                <select id="course" name="course" class="required sr-only">
-                    <option value="trackname" id="trackname">test</option>
-                </select>
-
+                <img
+                        class="track-icon"
+                        src="assets/stylesheets/images/track-icon.png"
+                />
+            </div>
+            <ul class="cards-list" id="tracks">
+                <!-- filled via js -->
+            </ul>
+            <label for="course" class="sr-only">Race Course:</label>
+            <select id="course" name="course" class="required sr-only">
+                <option value="trackname" id="trackname">test</option>
+            </select>
+            <div class="wrap-card">
                 <h3>Choose your racer</h3>
-                <ul class="cards-list" id="racers">
-                    <!-- filled via js -->
-                </ul>
-                <label for="podRacer" class="sr-only">Pod Racer:</label>
-                <select id="podRacer" name="podRacer" class="required sr-only">
-                    <option value="test5">test</option>
-                </select>
-                <button class="button" type="submit" id="submit-create-race">Start Race</button>
-            </form>
-        </section>
-    </main>
-    <footer></footer>
+                <img
+                        class="hedgehog"
+                        src="assets/stylesheets/images/hedgehog.png"
+                />
+            </div>
+            <ul class="cards-list" id="racers">
+                <!-- filled via js -->
+            </ul>
+            <label for="podRacer" class="sr-only">Pod Racer:</label>
+            <select
+                    id="podRacer"
+                    name="podRacer"
+                    class="required sr-only"
+            >
+                <option value="test5">test</option>
+            </select>
+            <button
+                    class="button"
+                    type="submit"
+                    id="submit-create-race"
+            >
+                Start Race
+            </button>
+        </form>
+    </section>
+</main>
+<footer>
+    <div>
+        Credits:
+        <a href="http://www.freepik.com"
+        >Picture designed by upklyak / Freepik</a
+        >
+        <a href="https://www.flaticon.com/authors/srip" title="srip"
+        >srip</a
+        >from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+        >www.flaticon.com,
+        </a>
+        <a
+                href="https://www.iconfinder.com/icons/3069187/achivement_business_mission_winner_icon"
+                title="Iconfinder"
+        >www.iconfinder.com</a
+        >
+    </div>
+</footer>
 </body>
 </html>
